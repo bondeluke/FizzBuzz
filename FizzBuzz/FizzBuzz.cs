@@ -29,7 +29,7 @@ namespace FizzBuzz
 
             foreach (var entry in _fizzBuzzDict)
             {
-                if (number.IsDivisibleBy(entry.Key))
+                if (number % entry.Key == 0)
                 {
                     output += entry.Value;
                 }
